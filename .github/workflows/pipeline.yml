@@ -1,7 +1,6 @@
 name: pipeline
 
-on:
-  push:
+on: [push, pull_request]
 
 env:
   GPG_SIGN_KEY: ${{ secrets.GPG_SIGN_KEY }}
